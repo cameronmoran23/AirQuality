@@ -33,7 +33,6 @@ class Load:
         Parameters:
         df (pd.DataFrame): The DataFrame to write to the database
         table_name (str): The name of the table in the database
-        Returns:
         """
         try:
             df.to_sql(table_name, self.engine, if_exists='replace', index=False)
